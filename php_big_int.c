@@ -802,7 +802,7 @@ ZEND_FUNCTION(bi_base_convert)
 {
     char *str = NULL;
     int str_len;
-    int base_from, base_to;
+    long base_from, base_to;
     big_int_str s, *s_ptr = NULL;
     const char *errstr = NULL;
 
