@@ -740,7 +740,7 @@ error:
 ZEND_FUNCTION(bi_to_str)
 {
     zval *tmp = NULL;
-    int base;
+    long base;
     big_int_str *s_ptr = NULL;
     const char *errstr = NULL;
     args_entry arg = {0};
