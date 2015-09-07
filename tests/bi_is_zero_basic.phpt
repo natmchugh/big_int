@@ -1,0 +1,10 @@
+--TEST--
+bi_is_zero
+--FILE--
+<?php
+var_dump(bi_is_zero('00000000'));
+var_dump(bi_is_zero('00000010'));
+?>
+--EXPECT--
+int(1)
+int(0)
