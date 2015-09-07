@@ -666,7 +666,7 @@ ZEND_MINFO_FUNCTION(bi)
 
 /*******************************************************************/
 /**
-    resource bi_from_str(string number [, int base])
+    resource bi_from_str(string number [, long base])
 
     Creates big_int number from string [number].
     [base] - is base of number. It can be from 2 to 36 inclusive
@@ -676,7 +676,7 @@ ZEND_FUNCTION(bi_from_str)
 {
     char *str = NULL;
     int str_len;
-    int base;
+    long base;
     big_int_str s;
     big_int *num = NULL;
     const char *errstr = NULL;
